@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanNest Realty – Find Your Dream Property</title>
+  <meta name="description" content="UrbanNest Realty: browse apartments, villas, houses and plots with prices, locations, facilities and contact options.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="container topbar-in">
+      <span>📞 +91 98765 12345</span>
+      <span>✉️ sales@urbannest.com</span>
+      <span class="hide-sm">📍 Road No. 36, Jubilee Hills, Hyderabad</span>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="home">
+    <div class="container nav">
+      <a href="#home" class="logo"><span class="logo-icon">⌂</span> Urban<b>Nest</b></a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">☰</label>
+
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#types">Property Types</a>
+        <a href="#listings">Listings</a>
+        <a href="#details">Details</a>
+        <a href="#agents">Agents</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-gold btn-sm nav-cta">List Property</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO WITH SEARCH ===== -->
+  <section class="hero">
+    <div class="container hero-in">
+      <span class="pill">#1 Trusted Real Estate Partner</span>
+      <h1>Find the home that <em>fits your life</em></h1>
+      <p>Browse verified apartments, villas, independent houses and plots in the best locations across Hyderabad.</p>
+
+      <form class="search-box" action="#listings">
+        <div class="field">
+          <label for="loc">Location</label>
+          <select id="loc">
+            <option>All Locations</option><option>Gachibowli</option><option>Jubilee Hills</option>
+            <option>Kondapur</option><option>Kokapet</option><option>Banjara Hills</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="type">Property Type</label>
+          <select id="type">
+            <option>All Types</option><option>Apartment</option><option>Villa</option>
+            <option>Independent House</option><option>Plot</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="budget">Budget</label>
+          <select id="budget">
+            <option>Any Budget</option><option>Below ₹50 Lakh</option><option>₹50L – ₹1 Cr</option>
+            <option>₹1 Cr – ₹3 Cr</option><option>Above ₹3 Cr</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">🔍 Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div><b>2,500+</b><span>Properties Listed</span></div>
+      <div><b>1,800+</b><span>Happy Families</span></div>
+      <div><b>120+</b><span>Expert Agents</span></div>
+      <div><b>15 Yrs</b><span>Of Experience</span></div>
+    </div>
+  </section>
+
+  <!-- ===== PROPERTY TYPES ===== -->
+  <section class="section" id="types">
+    <div class="container">
+      <div class="head"><h2>Explore by Property Type</h2><p>Whatever you are looking for, we have it.</p></div>
+      <div class="type-grid">
+        <a href="#listings" class="type"><span>🏢</span><h3>Apartments</h3><p>850+ listings</p></a>
+        <a href="#listings" class="type"><span>🏡</span><h3>Villas</h3><p>420+ listings</p></a>
+        <a href="#listings" class="type"><span>🏠</span><h3>Independent Houses</h3><p>610+ listings</p></a>
+        <a href="#listings" class="type"><span>🌳</span><h3>Plots &amp; Land</h3><p>380+ listings</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROPERTY LISTINGS ===== -->
+  <section class="section alt" id="listings">
+    <div class="container">
+      <div class="head"><h2>Featured Properties</h2><p>Hand-picked homes with the best value in prime locations.</p></div>
+
+      <div class="prop-grid">
+
+        <article class="prop">
+          <div class="img apt"><div class="bld"></div><span class="status sale">For Sale</span><span class="photos">📷 12</span></div>
+          <div class="body">
+            <p class="price">₹1.25 Cr</p>
+            <h3>Skyline Heights – 3 BHK Apartment</h3>
+            <p class="loc">📍 Gachibowli, Hyderabad</p>
+            <ul class="specs"><li>🛏 3 Beds</li><li>🛁 3 Baths</li><li>📐 1,650 sq ft</li></ul>
+            <p class="chips"><i>Lift</i><i>Gym</i><i>Parking</i><i>Pool</i></p>
+            <div class="actions"><a href="#details" class="btn btn-primary btn-sm">View Details</a><a href="#contact" class="btn btn-outline btn-sm">Contact</a></div>
+          </div>
+        </article>
+
+        <article class="prop">
+          <div class="img villa"><div class="bld"></div><span class="status sale">For Sale</span><span class="photos">📷 18</span></div>
+          <div class="body">
+            <p class="price">₹4.80 Cr</p>
+            <h3>Palm Grove – 4 BHK Luxury Villa</h3>
+            <p class="loc">📍 Jubilee Hills, Hyderabad</p>
+            <ul class="specs"><li>🛏 4 Beds</li><li>🛁 5 Baths</li><li>📐 3,800 sq ft</li></ul>
+            <p class="chips"><i>Garden</i><i>Private Pool</i><i>Security</i><i>Garage</i></p>
+            <div class="actions"><a href="#details" class="btn btn-primary btn-sm">View Details</a><a href="#contact" class="btn btn-outline btn-sm">Contact</a></div>
+          </div>
+        </article>
+
+        <article class="prop">
+          <div class="img house"><div class="bld"></div><span class="status rent">For Rent</span><span class="photos">📷 9</span></div>
+          <div class="body">
+            <p class="price">₹45,000 <small>/ month</small></p>
+            <h3>Green Acres – 3 BHK House</h3>
+            <p class="loc">📍 Kondapur, Hyderabad</p>
+            <ul class="specs"><li>🛏 3 Beds</li><li>🛁 2 Baths</li><li>📐 1,900 sq ft</li></ul>
+            <p class="chips"><i>Furnished</i><i>Balcony</i><i>Parking</i><i>Pet Friendly</i></p>
+            <div class="actions"><a href="#details" class="btn btn-primary btn-sm">View Details</a><a href="#contact" class="btn btn-outline btn-sm">Contact</a></div>
+          </div>
+        </article>
+
+        <article class="prop">
+          <div class="img plot"><div class="bld"></div><span class="status new">New</span><span class="photos">📷 6</span></div>
+          <div class="body">
+            <p class="price">₹85 Lakh</p>
+            <h3>Royal Enclave – 300 sq yd Plot</h3>
+            <p class="loc">📍 Kokapet, Hyderabad</p>
+            <ul class="specs"><li>📐 300 sq yd</li><li>🧭 East Facing</li><li>✅ HMDA Approved</li></ul>
+            <p class="chips"><i>Gated</i><i>Wide Roads</i><i>Water</i><i>Electricity</i></p>
+            <div class="actions"><a href="#details" class="btn btn-primary btn-sm">View Details</a><a href="#contact" class="btn btn-outline btn-sm">Contact</a></div>
+          </div>
+        </article>
+
+        <article class="prop">
+          <div class="img apt alt2"><div class="bld"></div><span class="status rent">For Rent</span><span class="photos">📷 10</span></div>
+          <div class="body">
+            <p class="price">₹32,000 <small>/ month</small></p>
+            <h3>Lake View – 2 BHK Apartment</h3>
+            <p class="loc">📍 Madhapur, Hyderabad</p>
+            <ul class="specs"><li>🛏 2 Beds</li><li>🛁 2 Baths</li><li>📐 1,150 sq ft</li></ul>
+            <p class="chips"><i>Lift</i><i>Power Backup</i><i>Park</i><i>CCTV</i></p>
+            <div class="actions"><a href="#details" class="btn btn-primary btn-sm">View Details</a><a href="#contact" class="btn btn-outline btn-sm">Contact</a></div>
+          </div>
+        </article>
+
+        <article class="prop">
+          <div class="img villa alt2"><div class="bld"></div><span class="status sale">For Sale</span><span class="photos">📷 15</span></div>
+          <div class="body">
+            <p class="price">₹2.95 Cr</p>
+            <h3>Sunrise Villas – 3 BHK Villa</h3>
+            <p class="loc">📍 Banjara Hills, Hyderabad</p>
+            <ul class="specs"><li>🛏 3 Beds</li><li>🛁 4 Baths</li><li>📐 2,700 sq ft</li></ul>
+            <p class="chips"><i>Terrace</i><i>Clubhouse</i><i>Security</i><i>Garden</i></p>
+            <div class="actions"><a href="#details" class="btn btn-primary btn-sm">View Details</a><a href="#contact" class="btn btn-outline btn-sm">Contact</a></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROPERTY DETAILS (SPOTLIGHT) ===== -->
+  <section class="section" id="details">
+    <div class="container">
+      <div class="head"><h2>Property Spotlight</h2><p>Full details of our most popular listing.</p></div>
+
+      <div class="detail-grid">
+        <div class="detail-main">
+          <div class="img villa big"><div class="bld"></div><span class="status sale">For Sale</span></div>
+          <h3>Palm Grove – 4 BHK Luxury Villa</h3>
+          <p class="loc">📍 Road No. 45, Jubilee Hills, Hyderabad – 500033</p>
+          <p class="desc">A beautifully designed contemporary villa surrounded by greenery, offering spacious interiors, a private pool and 24×7 security in one of the most sought-after neighbourhoods of the city. Close to top schools, hospitals and shopping.</p>
+
+          <h4>Key Details</h4>
+          <table class="spec-table">
+            <tr><th>Property Type</th><td>Villa</td><th>Built-up Area</th><td>3,800 sq ft</td></tr>
+            <tr><th>Bedrooms</th><td>4</td><th>Bathrooms</th><td>5</td></tr>
+            <tr><th>Floors</th><td>G + 2</td><th>Facing</th><td>North-East</td></tr>
+            <tr><th>Age</th><td>2 Years</td><th>Status</th><td>Ready to Move</td></tr>
+          </table>
+
+          <h4>Facilities</h4>
+          <ul class="fac">
+            <li>🏊 Private Pool</li><li>🌿 Landscaped Garden</li><li>🚗 2-Car Garage</li>
+            <li>🛡 24×7 Security</li><li>⚡ Power Backup</li><li>🏋 Home Gym</li>
+            <li>📶 High-speed Internet</li><li>🌇 Terrace Lounge</li>
+          </ul>
+        </div>
+
+        <aside class="detail-side">
+          <p class="price big-price">₹4.80 Cr</p>
+          <p class="emi">EMI starts at <b>₹3.4 Lakh / month</b></p>
+          <hr>
+          <div class="agent-mini">
+            <div class="avatar a1">RK</div>
+            <div><h4>Ravi Kumar</h4><p>Senior Property Advisor</p></div>
+          </div>
+          <a href="tel:+919876512345" class="btn btn-primary btn-block">📞 Call Agent</a>
+          <a href="#contact" class="btn btn-outline btn-block">📅 Schedule a Visit</a>
+          <a href="#contact" class="btn btn-gold btn-block">✉️ Send Enquiry</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why">
+    <div class="container">
+      <div class="head light"><h2>Why Choose UrbanNest?</h2><p>We make buying, selling and renting simple and safe.</p></div>
+      <div class="why-grid">
+        <div><span>✅</span><h4>Verified Listings</h4><p>Every property is checked by our team before it goes live.</p></div>
+        <div><span>💰</span><h4>Best Prices</h4><p>Transparent pricing with no hidden brokerage charges.</p></div>
+        <div><span>📄</span><h4>Legal Support</h4><p>Free help with documents, registration and loans.</p></div>
+        <div><span>🤝</span><h4>Expert Guidance</h4><p>Friendly agents with local market knowledge.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AGENTS ===== -->
+  <section class="section" id="agents">
+    <div class="container">
+      <div class="head"><h2>Meet Our Agents</h2><p>Experienced professionals ready to help you.</p></div>
+      <div class="agent-grid">
+        <div class="agent"><div class="avatar a1">RK</div><h3>Ravi Kumar</h3><p class="role">Senior Property Advisor</p><p>📞 +91 98765 12345</p><p>✉️ ravi@urbannest.com</p></div>
+        <div class="agent"><div class="avatar a2">SP</div><h3>Sneha Patel</h3><p class="role">Luxury Villa Specialist</p><p>📞 +91 98765 22222</p><p>✉️ sneha@urbannest.com</p></div>
+        <div class="agent"><div class="avatar a3">AM</div><h3>Arjun Mehta</h3><p class="role">Rental &amp; Leasing Expert</p><p>📞 +91 98765 33333</p><p>✉️ arjun@urbannest.com</p></div>
+        <div class="agent"><div class="avatar a4">NR</div><h3>Nisha Reddy</h3><p class="role">Plots &amp; Investment Advisor</p><p>📞 +91 98765 44444</p><p>✉️ nisha@urbannest.com</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section alt">
+    <div class="container">
+      <div class="head"><h2>What Our Clients Say</h2><p>Real stories from real homeowners.</p></div>
+      <div class="rev-grid">
+        <blockquote><p class="stars">★★★★★</p><p>“UrbanNest found us a perfect 3 BHK within our budget in just two weeks. Super smooth process!”</p><cite>— Priya &amp; Karthik, Gachibowli</cite></blockquote>
+        <blockquote><p class="stars">★★★★★</p><p>“Honest advice and complete legal support. I never felt confused about the paperwork.”</p><cite>— Suresh N., Kondapur</cite></blockquote>
+        <blockquote><p class="stars">★★★★☆</p><p>“Sold my old house at a great price. The team handled everything professionally.”</p><cite>— Lakshmi D., Banjara Hills</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Looking to buy, sell or rent? Send us a message and our team will call you back within 24 hours.</p>
+        <ul>
+          <li>📍 <span>Road No. 36, Jubilee Hills, Hyderabad – 500033</span></li>
+          <li>📞 <span>+91 98765 12345</span></li>
+          <li>✉️ <span>sales@urbannest.com</span></li>
+          <li>🕘 <span>Mon – Sat: 9:00 AM – 7:00 PM</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="#contact">
+        <div class="row">
+          <input type="text" placeholder="Full Name" aria-label="Full name" required>
+          <input type="tel" placeholder="Phone Number" aria-label="Phone number" required>
+        </div>
+        <input type="email" placeholder="Email Address" aria-label="Email address" required>
+        <select aria-label="I am interested in">
+          <option>I want to Buy</option><option>I want to Rent</option><option>I want to Sell</option>
+        </select>
+        <textarea rows="4" placeholder="Tell us about your requirement…" aria-label="Message"></textarea>
+        <button type="submit" class="btn btn-primary btn-block">Send Enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo"><span class="logo-icon">⌂</span> Urban<b>Nest</b></a>
+        <p>Your trusted partner in finding the perfect place to call home.</p>
+      </div>
+      <div><h4>Quick Links</h4><a href="#types">Property Types</a><a href="#listings">Listings</a><a href="#agents">Agents</a><a href="#contact">Contact</a></div>
+      <div><h4>Locations</h4><a href="#listings">Gachibowli</a><a href="#listings">Jubilee Hills</a><a href="#listings">Kondapur</a><a href="#listings">Kokapet</a></div>
+      <div><h4>Follow Us</h4><p>Facebook · Instagram</p><p>LinkedIn · YouTube</p></div>
+    </div>
+    <div class="copy">© 2026 UrbanNest Realty. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
